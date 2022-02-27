@@ -1,0 +1,22 @@
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <img *ngFor="let image of images; let i=index" 
+        [src]="image.imageSrc" [alt]="image.imageAlt"
+        [ngClass]="{'image-active': selectedIndex ===i}"
+        class="fade"
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i=index"
+            class="dot"
+            [ngClass]="{'active': selectedIndex === i}"
+            (click)="selectImage(i)"
+        >
+        </span>
+    </div>
+
+    <div class="grouped" *ngFor="let carousel of stories">
+        <h2 class="m-0 fw-bold">{{ carousel.title}}</h2>
+        <p class="mt-3">{{ carousel.story }}</p>
+        <a class="btn btn-primary">E-church</a>
+    </div>
+</div>
