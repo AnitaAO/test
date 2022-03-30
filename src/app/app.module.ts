@@ -11,18 +11,17 @@ import { CarouselModule } from './carousel/carousel.module';
 import { HomeGalleryComponent } from './home-gallery/home-gallery.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
-
-
+import { DefaultModule } from './layouts/default/default.module';
 
 @NgModule({
   declarations: [				
     AppComponent,
   
-      BackgroundComponent,
-         HomeGalleryComponent,
-         HeaderComponent,
-         FooterComponent,
+    BackgroundComponent,
+    HomeGalleryComponent,
+    HeaderComponent,
+    FooterComponent,
+
       
    ],
   imports: [
@@ -31,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
+    DefaultModule,
    
   ],
   providers: [],
