@@ -14,7 +14,7 @@ export class AppComponent {
   images = [
   {
     imageSrc:
-    'assets/images/audiohero.png',
+    'assets/images/banner1.svg',
     imageAlt: 'banner1',
   },
 

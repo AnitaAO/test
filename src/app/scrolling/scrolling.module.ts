@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarouselComponent } from '../carousel.component';
+import { ScrollingComponent } from '../scrolling.component';
+
+
+
 @NgModule({
   declarations: [
-    CarouselComponent
+    ScrollingComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    CarouselComponent
+    ScrollingComponent
   ]
 })
-export class CarouselModule { }
+export class ScrollingModule { }

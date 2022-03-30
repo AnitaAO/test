@@ -1,4 +1,23 @@
+<div class="fixed-top">
+    <app-header></app-header>
+</div>
+<div>
+    <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+</div>
+<div>
+    <app-home-gallery></app-home-gallery>
+</div>
+<div>
+    <app-background></app-background>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<div>
+    <app-footer></app-footer>
+</div>
 
-<app-carousel [images]="images" [autoSlide]="true"></app-carousel>
-<app-swiper></app-swiper>
-<router-outlet></router-outlet>
+
+
+
+

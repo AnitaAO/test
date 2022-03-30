@@ -5,6 +5,14 @@
         class="fade"
     >
 
+    <div class="grouped space-y-[24px]" *ngFor="let carousel of stories">
+        <h2 class="hero-title text-[40px] font-[800px] font-bold">{{ carousel.title}}</h2>
+        <p class="hero-story text-[14px] font-[600px]">{{ carousel.story }}</p>
+        <div class="">
+            <a class="text-[12px] font-[700px] bg-[#FE0808] rounded-full px-[38px] py-[10px]" ><button type="button" class="cta-btn rounded-full">E-Church</button></a>
+        </div>
+    </div>
+
     <div *ngIf="indicators" class="carousel-dot-container">
         <span *ngFor="let dot of images; let i=index"
             class="dot"
@@ -14,9 +22,4 @@
         </span>
     </div>
 
-    <div class="grouped" *ngFor="let carousel of stories">
-        <h2 class="m-0 fw-bold">{{ carousel.title}}</h2>
-        <p class="mt-3">{{ carousel.story }}</p>
-        <a class="btn btn-primary">E-church</a>
-    </div>
 </div>

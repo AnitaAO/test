@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GalleryModule } from 'ng-gallery';
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BackgroundComponent } from './background/background.component';
 import { CarouselModule } from './carousel/carousel.module';
-import { SwiperComponent } from './swiper/swiper.component';
-import { NotvideoOwlComponent } from './notvideo-owl/notvideo-owl.component';
-import { SwiperModule } from 'swiper/angular';
+import { HomeGalleryComponent } from './home-gallery/home-gallery.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 
 
 @NgModule({
@@ -20,8 +20,10 @@ import { SwiperModule } from 'swiper/angular';
     AppComponent,
   
       BackgroundComponent,
-      SwiperComponent,
-      NotvideoOwlComponent
+         HomeGalleryComponent,
+         HeaderComponent,
+         FooterComponent,
+      
    ],
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +31,7 @@ import { SwiperModule } from 'swiper/angular';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    SwiperModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
