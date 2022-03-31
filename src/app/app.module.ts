@@ -20,10 +20,9 @@ import { DefaultModule } from './layouts/default/default.module';
     BackgroundComponent,
     HomeGalleryComponent,
     HeaderComponent,
-    FooterComponent,
-
-      
+    FooterComponent      
    ],
+
   imports: [
     BrowserAnimationsModule,
     GalleryModule,
